@@ -4,44 +4,73 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Home — Sampujya Prabal Saikia’s personal portfolio.">
+  <meta name="color-scheme" content="light dark">
   <title>Home | Sampujya Prabal Saikia</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="theme.js" defer></script>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 </head>
-<body>
+<body class="home-body">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="site">
-    <nav class="sidebar" aria-label="Site">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li class="subnav"><a href="now.html">Now</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="writing.html">Writing</a></li>
-        <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
-        <li><a href="contact.html">Connect</a></li>
-        <li><button class="theme-toggle" type="button" aria-label="Toggle dark mode"></button></li>
-      </ul>
-    </nav>
-    <main id="main" class="content home">
-      <h1 class="visually-hidden">Sampujya Prabal Saikia</h1>
-    
-      <p> Hey <strong> Sampujya Prabal Saikia.</strong> I love building things. I build solutions in the open where people can use them.</p>
-      <section aria-labelledby="explore-title">
-        <h2 id="explore-title" class="prose-heading">Some things to explore:</h2>
-        <ul class="dash-list">
-          <li><a href="work.html">Things I’ve built</a>.</li>
-          <li><a href="research.html">Research &amp; questions</a>.</li>
-          <li><a href="writing.html">Writing &amp; notes</a>.</li>
-          <li><a href="now.html">What I’m up to now</a>.</li>
-        </ul>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="now.html">Now</a>
+        <a href="work.html">Work</a>
+        <a href="writing.html">Writing</a>
+        <a href="contact.html">Connect</a>
+      </nav>
+      <label class="theme-control" title="Switch between light and dark theme">
+        <input class="theme-switch" type="checkbox" role="switch" aria-label="Use alternate color theme">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Switch color theme</span>
+      </label>
+    </header>
+    <main id="main" tabindex="-1" class="page home-page">
+      <header class="home-intro">
+        <div class="home-identity">
+          <p class="home-caption">A personal workbench</p>
+          <h1>Sampujya<br> Prabal Saikia<span class="name-stop">.</span></h1>
+        </div>
+        <div class="home-statement">
+          <p class="home-thought">A question.<br> A useful thing.<br> A little more clarity.</p>
+          <p>I build things, follow questions, and write to make sense of what I learn. This is where that work takes shape.</p>
+        </div>
+      </header>
+
+      <aside class="workbench-note" aria-labelledby="current-title">
+        <h2 id="current-title">On my desk</h2>
+        <p>Small tools, thoughtful software, and the practice of learning in public.</p>
+        <a href="now.html">The current picture</a>
+      </aside>
+
+      <section class="practice" aria-labelledby="practice-title">
+        <h2 id="practice-title" class="home-caption">Different ways into the work</h2>
+        <div class="practice-grid">
+          <article class="practice-item">
+            <h3><a href="work.html">Make something.</a></h3>
+            <p>Tools and experiments built around a useful idea.</p>
+          </article>
+          <article class="practice-item">
+            <h3><a href="research.html">Stay curious.</a></h3>
+            <p>Open questions, reading, and lines of investigation.</p>
+          </article>
+          <article class="practice-item">
+            <h3><a href="writing.html">Find the words.</a></h3>
+            <p>Notes from the process and ideas worth keeping.</p>
+          </article>
+        </div>
       </section>
 
-      <p><a href="contact.html">Connect</a>.</p>
-      <p class="signature">— Sampujya</p>
-      <footer class="page-footer"><a href="index.html">home</a><span aria-hidden="true"> · </span><a href="resume.html">resume</a></footer>
+      <p class="home-invitation">Have a question of your own? <a href="contact.html">Let’s compare notes.</a></p>
     </main>
+    <footer class="site-footer">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/Samppujyaa" rel="me">GitHub</a>
+    </footer>
   </div>
 </body>
 </html>

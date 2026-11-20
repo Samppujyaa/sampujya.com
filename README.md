@@ -1,2 +1,2 @@
 # sampujya.com
-Clean personal site
+Pure HTML & CSS personal site. 
